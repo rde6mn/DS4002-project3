@@ -1,7 +1,7 @@
 # Power of Machine Learning in Distinguishing Skin Lesions
 
 ## Repository Overview
-Welcome to the Data Dinosaurs' project repository! This repository contains our analysis of skin lesions from the ISIC Skin Cancer Dataset as part of our **DS 4002 - Data Science Project**. The project explores whether a machine learning-based classification model can distinguish between malignant and benign skin lesions from the dataset utilizing **image data in R with a Random Forest Classifier** and achieve at least 90% accuracy. 
+Welcome to the Data Dinosaurs' project repository! This repository contains our analysis of skin lesions from the ISIC Skin Cancer Dataset as part of our **DS 4002 - Data Science Project**. The project explores whether a machine learning-based classification model can distinguish between malignant and benign skin lesions from the dataset utilizing **image data in Python with a Random Forest Classifier** and achieve at least 90% accuracy. 
 
 ## Team Members
 - **Amani Akkoub** (ctf3un) - Group Leader  
@@ -32,6 +32,43 @@ Can a machine learning model trained on the ISIC Skin Cancer Dataset achieve der
 - Preprocessed data was split into training (70%), validation (15%), and test (15%) sets
 
 ## Exploratory Data Analysis (EDA)
+- **Visualized images data** 
+- Age Distribution of ISIC Archive displays left skew showing that data collection of skin lesions is from **older patients**
+- Pie Chart of Benign vs. Malignant Count in ISIC Archive illustrates **greater benign lesions** than malignant
 
+## Model Approach
+We use **Python** to conduct image data analysis due to its robust modeling and identification capabilities. The analysis was performed on the Windows platform. Our workflow includes:
 
+1. **Visualizing Images Data**: Understanding age distributions, differences in amount of benign and malignant lesions, and trends
+2. **Random Forest Classifier**: Leveraging Scikit-Learn in Python for classification of lesions
+
+## Methodology [NEED TO DO]
+## Reproduceability [NEED TO DO]
+
+# Required Python Packages [NEED TO ADD RANDOM FOREST AND OTHER LIBRARIES POST ANALYSIS)
+Ensure the following Python packages are installed before running the code:
+
+library(pandas)
+library(matplotlib)
+library(seaborn)
+
+## Goal
+To analyze skin lesions from the ISIC dataset to achieve at least 90% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
+
+## Repo Structure [MIGHT NEED TO EDIT]
+├── data/
+│   ├── metadata.csv
+├── notebooks/
+│   ├── exploratory_analysis.python
+│   ├── modeling.python
+├── results/
+│   ├── plots/
+│   ├── classification/
+|---data appendix
+├── README.md
+
+## Conclusion
+Our analysis aims to provide insights into the distribution and characteristics of skin lesions within the ISIC dataset. By exploring imaging patterns, we hope to highlight the interplay between biological factors, lesion location, and diagnosis trends in the context of skin cancer detection. For any questions or contributions, please reach out to the team!
+
+Data Dinosaurs | DS 4002 - Data Science Project
 
