@@ -1,7 +1,7 @@
 # Power of Machine Learning in Distinguishing Skin Lesions
 
 ## Repository Overview
-Welcome to the Data Dinosaurs' project repository! This repository contains our analysis of skin lesions from the ISIC Skin Cancer Dataset as part of our **DS 4002 - Data Science Project**. The project explores whether a machine learning-based classification model can distinguish between malignant and benign skin lesions from the dataset utilizing **image data in Python with a Random Forest Classifier** and achieve at least 90% accuracy. 
+Welcome to the Data Dinosaurs' project repository! This repository contains our analysis of skin lesions from the ISIC Skin Cancer Dataset as part of our **DS 4002 - Data Science Project**. The project explores whether a machine learning-based classification model can distinguish between malignant and benign skin lesions from the dataset utilizing **image data in Python with a Random Forest Classifier** and achieve at least 60% accuracy. 
 
 ## Team Members
 - **Amani Akkoub** (ctf3un) - Group Leader  
