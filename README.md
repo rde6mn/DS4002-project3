@@ -106,14 +106,14 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 To analyze skin lesions from the ISIC dataset to achieve at least 60% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
 
 ## Repo Structure 
-├── data/
+├── DATA/
 │   ├── metadata.csv
-├── notebooks/
-│   ├── exploratory_analysis.python
-│   ├── modeling.python
+├── SCRIPTS/
+│   ├── SkinModel.py
+│   ├── MI3P3.py
 ├── results/
-│   ├── plots/
-│   ├── classification/
+│   ├── EDAPlots
+│   ├── MLModel_output
 |---data appendix
 ├── README.md
 
