@@ -39,8 +39,15 @@ Can a machine learning model trained on the ISIC Skin Cancer Dataset achieve der
 ## Model Approach
 We use **Python** to conduct image data analysis due to its robust modeling and identification capabilities. The analysis was performed on the Windows platform. Our workflow includes:
 
-1. **Visualizing Images Data**: Understanding age distributions, differences in amount of benign and malignant lesions, and trends
-2. **Random Forest Classifier**: Leveraging Scikit-Learn in Python for classification of lesions
+**Visualizing Metadata**: We explored variables such as sex, age, and personal history of melanoma to understand their distribution and relationship to lesion type.
+
+**Extracting Image Features**: Instead of raw pixel data, we used color histograms (Red, Green, and Blue channel distributions) to summarize visual features of each lesion image.
+
+**Data Preprocessing**: We handled missing values, encoded categorical variables, and merged metadata with extracted image features for modeling.
+
+**Logistic Regression Classifier**: We leveraged Scikit-Learn in Python to train a logistic regression model that classifies lesions as benign or malignant.
+
+**Model Evaluation**: Performance was assessed using accuracy, confusion matrix, and precision/recall metrics, focusing on identifying benign lesions with high confidence.
 
 ## Methodology [NEED TO DO]
 ## Reproduceability [NEED TO DO]
