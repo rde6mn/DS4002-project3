@@ -78,7 +78,7 @@ The script is deterministic (no randomness unless random_state is removed), ensu
 Output includes visualizations and classification metrics printed to the console and/or displayed with matplotlib.
 
 # Required Python Packages [NEED TO ADD RANDOM FOREST AND OTHER LIBRARIES POST ANALYSIS)
-Ensure the following Python packages are installed before running the code:
+**Ensure the following Python packages are installed before running the code:**
 
 import os               # For navigating file system
 
@@ -103,7 +103,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 ## Goal
-To analyze skin lesions from the ISIC dataset to achieve at least 90% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
+To analyze skin lesions from the ISIC dataset to achieve at least 60% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
 
 ## Repo Structure [MIGHT NEED TO EDIT]
 ├── data/
