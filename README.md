@@ -81,15 +81,25 @@ Output includes visualizations and classification metrics printed to the console
 Ensure the following Python packages are installed before running the code:
 
 import os               # For navigating file system
+
 import pandas as pd     # For metadata handling and DataFrame manipulation
+
 from PIL import Image   # For image loading and conversion
+
 import numpy as np      # For numerical computations
+
 import matplotlib.pyplot as plt  # For visualizations
+
 from sklearn.model_selection import train_test_split  # For data splitting
+
 from sklearn.linear_model import LogisticRegression   # For classification
+
 from sklearn.metrics import confusion_matrix, classification_report  # For evaluation
+
 from sklearn.pipeline import Pipeline
+
 from sklearn.compose import ColumnTransformer
+
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 ## Goal
