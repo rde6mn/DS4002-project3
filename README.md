@@ -49,7 +49,7 @@ We use **Python** to conduct image data analysis due to its robust modeling and 
 
 **Model Evaluation**: Performance was assessed using accuracy, confusion matrix, and precision/recall metrics, focusing on identifying benign lesions with high confidence.
 
-## Methodology [NEED TO DO]
+## Methodology 
 We used the ISIC skin lesion dataset consisting of over 600 dermoscopic images and an associated metadata CSV file.
 
 **Image Processing**: Each image was opened using the PIL library and converted to RGB. We computed color histograms for the Red, Green, and Blue channels (256 bins each), resulting in a shape of (3, 256) for each image’s histogram.
@@ -64,7 +64,7 @@ We used the ISIC skin lesion dataset consisting of over 600 dermoscopic images a
 
 **Evaluation**: We evaluated performance using a confusion matrix and classification report. The model achieved high accuracy (~79%) in identifying benign lesions, though performance on malignant lesions was lower.
 
-## Reproduceability [NEED TO DO]
+## Reproduceability 
 To reproduce our analysis:
 
 Clone or download the dataset folder (images) and the metadata.csv file.
@@ -77,7 +77,7 @@ The script is deterministic (no randomness unless random_state is removed), ensu
 
 Output includes visualizations and classification metrics printed to the console and/or displayed with matplotlib.
 
-# Required Python Packages [NEED TO ADD RANDOM FOREST AND OTHER LIBRARIES POST ANALYSIS)
+# Required Python Packages 
 **Ensure the following Python packages are installed before running the code:**
 
 import os               # For navigating file system
@@ -105,7 +105,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 ## Goal
 To analyze skin lesions from the ISIC dataset to achieve at least 60% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
 
-## Repo Structure [MIGHT NEED TO EDIT]
+## Repo Structure 
 ├── data/
 │   ├── metadata.csv
 ├── notebooks/
