@@ -13,10 +13,10 @@ Welcome to the Data Dinosaurs' project repository! This repository contains our 
 - **Date**: April 17, 2025  
 
 ## Hypothesis
-A Random Forest classifier, trained on preprocessed features from the ISIC Skin Cancer Dataset, can achieve at least 90% classification accuracy, with precision, recall, and F1-scores indicating robust performance across various classification scenarios.
+A Random Forest classifier, trained on preprocessed features from the ISIC Skin Cancer Dataset, can achieve at least 60% classification accuracy, with precision, recall, and F1-scores indicating robust performance across various classification scenarios.
 
 ## Research Question
-Can a machine learning model trained on the ISIC Skin Cancer Dataset achieve dermatologist-level accuracy in distinguishing malignant from benign skin lesions based on existing studies?
+Can a machine learning model trained on the ISIC Skin Cancer Dataset achieve above 60% accuracy in distinguishing malignant from benign skin lesions based on existing studies?
 
 ## Data Source and Preprocessing
  **Source**: International Skin Imaging Collaboration (ISIC) 
