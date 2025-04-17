@@ -50,14 +50,47 @@ We use **Python** to conduct image data analysis due to its robust modeling and 
 **Model Evaluation**: Performance was assessed using accuracy, confusion matrix, and precision/recall metrics, focusing on identifying benign lesions with high confidence.
 
 ## Methodology [NEED TO DO]
+We used the ISIC skin lesion dataset consisting of over 600 dermoscopic images and an associated metadata CSV file.
+
+**Image Processing**: Each image was opened using the PIL library and converted to RGB. We computed color histograms for the Red, Green, and Blue channels (256 bins each), resulting in a shape of (3, 256) for each image’s histogram.
+
+**Metadata Integration**: Metadata was cleaned and merged with the image data using the ISIC ID as a key. Features such as image size, patient sex, age, lesion location, and personal history of melanoma were included.
+
+**Data Preprocessing**: Non-numeric variables (e.g., 'sex', 'anatom_site_general') were encoded using OneHotEncoding. Missing data was handled where necessary. Target variable was 'benign_malignant' (binary: benign vs malignant).
+
+**Exploratory Data Analysis (EDA)**: We visualized the average color histograms for benign vs malignant lesions to observe differences in color profiles. We examined distribution of metadata fields (sex, age, personal history).
+
+**Modeling**: We used a Logistic Regression classifier (Scikit-Learn) to model lesion classification. Histogram values and metadata were used as features. The data was split into training (80%) and test (20%) sets.
+
+**Evaluation**: We evaluated performance using a confusion matrix and classification report. The model achieved high accuracy (~79%) in identifying benign lesions, though performance on malignant lesions was lower.
+
 ## Reproduceability [NEED TO DO]
+To reproduce our analysis:
+
+Clone or download the dataset folder (images) and the metadata.csv file.
+
+Make sure all image files are in a folder named ISIC-images in your working directory.
+
+Run the Python script (SkinModel.py) containing all processing, modeling, and evaluation steps.
+
+The script is deterministic (no randomness unless random_state is removed), ensuring reproducibility of results.
+
+Output includes visualizations and classification metrics printed to the console and/or displayed with matplotlib.
 
 # Required Python Packages [NEED TO ADD RANDOM FOREST AND OTHER LIBRARIES POST ANALYSIS)
 Ensure the following Python packages are installed before running the code:
 
-library(pandas)
-library(matplotlib)
-library(seaborn)
+import os               # For navigating file system
+import pandas as pd     # For metadata handling and DataFrame manipulation
+from PIL import Image   # For image loading and conversion
+import numpy as np      # For numerical computations
+import matplotlib.pyplot as plt  # For visualizations
+from sklearn.model_selection import train_test_split  # For data splitting
+from sklearn.linear_model import LogisticRegression   # For classification
+from sklearn.metrics import confusion_matrix, classification_report  # For evaluation
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 ## Goal
 To analyze skin lesions from the ISIC dataset to achieve at least 90% classification accuracy while evaluating precision, recall, and F1-scores to ensure robust performance. 
